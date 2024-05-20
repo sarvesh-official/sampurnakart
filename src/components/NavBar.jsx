@@ -5,12 +5,15 @@ import {
   ShoppingCart,
   User2Icon,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between w-full p-3 px-5 border-b-2 border-orange-500">
+    <nav className="flex justify-between w-full p-2 px-5 border-b-2 border-orange-500">
       <div className="flex items-center gap-3">
-        <img src="/favicon.png" alt="" height={100} width={100} />
+        <Link to={"/"}>
+          <img src="/favicon.png" alt="" height={100} width={100} />
+        </Link>
         <div className="flex gap-2">
           <MapPinIcon />
           <p>Deliver to Delhi</p>
